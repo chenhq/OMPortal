@@ -5,11 +5,11 @@ gem 'rails', '3.2.13'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
+gem 'haml-rails'
 
 group :development do
   gem 'rspec-rails', '2.13.1'
   gem 'sqlite3'
-  gem 'haml-rails'
   gem 'annotate'
 end
 
