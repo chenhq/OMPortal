@@ -1,0 +1,16 @@
+#product-carousel.carousel.slide
+	%ol.carousel-indicators
+		%li{"data-slide-to" => "0", "data-target" => "#product-carousel"}
+		%li{"data-slide-to" => "1", "data-target" => "#product-carousel"}
+		%li.active{"data-slide-to" => "2", "data-target" => "#product-carousel"}
+	.carousel-inner
+		.item
+			= image_tag("co1.jpg", alt: "Demo Image")
+			.carousel-caption				
+				%p The image description.
+		.item.active
+			= image_tag("co2.jpg", alt: "Demo Image")
+			.carousel-caption
+				%p The image description 2.
+	%a.carousel-control.left{"data-slide" => "prev", :href => "#product-carousel"} ‹
+	%a.carousel-control.right{"data-slide" => "next", :href => "#product-carousel"} ›
